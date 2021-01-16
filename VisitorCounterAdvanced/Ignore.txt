@@ -1,0 +1,10 @@
+ # Ignored Avi's
+
+#Blank lines are ignored
+#Lines starting with # are ignored
+
+#Ignored avi entries should start with the word Ignore, then an equals sign followed by the UUID/Key of the avi to be ignored
+#E.g. Ignore = cbd17d01-4a7e-437a-ac57-0c8313508aae
+#If you wish to add the name as well, just put a hash tag on the line above or bellow the uuid with the name of the avatar. 
+
+Ignore = cbd17d01-4a7e-437a-ac57-0c8313508aae

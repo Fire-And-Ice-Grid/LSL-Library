@@ -1,0 +1,8 @@
+#Helpers
+#All lines with a # at the start are ignored
+#List Helpers Avatars listed here will get a notification the first time someone arives in the region that day
+#Helper entries should start with the word Helper, then an equals sign, followed by the UUID/Key of the avatar
+#E.g. Helper = cbd17d01-4a7e-437a-ac57-0c8313508aae
+#If you wish to add the name as well, just put a hash tag on the line above or bellow the uuid with the name of the avatar. 
+
+Helper = cbd17d01-4a7e-437a-ac57-0c8313508aae 

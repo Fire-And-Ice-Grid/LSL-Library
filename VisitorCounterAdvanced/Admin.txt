@@ -1,0 +1,10 @@
+# Allowed Admins
+
+#Blank lines are ignored
+#Lines starting with # are ignored
+
+#Admin lines should start with the word Admin, have an equals sign and then the UUID / Key of the avatar. 
+#e.g. Admin = cbd17d01-4a7e-437a-ac57-0c8313508aae
+#If you wish to add the name as well, just put a hash tag on the line above or bellow the uuid with the name of the avatar. 
+
+Admin = cbd17d01-4a7e-437a-ac57-0c8313508aae 

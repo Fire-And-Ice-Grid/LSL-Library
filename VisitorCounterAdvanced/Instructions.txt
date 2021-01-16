@@ -1,0 +1,31 @@
+Introduction
+============
+The Covey Advanced Visitor is as complete a visitor tracking system as is reasonably possible to make using just inworld tools. It records the difference between the total number of visits each day and the number of unique visits. Additionally each day a list of the unique visitors is saved. To stop the memory requirements quickly spiralling out of control this information is saved to a notecard at the end of each day. Then at the end of each month, the daily notecards are combined into one for the previous month. Finally, at the end of the year, each of the monthly notecards is combined into one for the entire year. If in use it will also send instant messages to helpers alerting them when an avi arrives in that region for the first time that day. Similarly each time someone arrives in the region for the first time that day their name will be displayed on a visitors board.
+
+How it works
+============
+This script will turn the prim it is in into a volumetric prim. Volumetric prims act like phantom prims while still allowing the recording of collision events. Each time an avi passes through the prim it checks to see if that avi has already visited the sim today. If they have it will increase the total visits count but not the unique count, nor will it save the avatars details again. If however the avatar has not visited yet today the counter stores the avatars details and increases both the unique and total visitors counter. In addition to the collision based detection, the region is periodically scanned. This scan is done to catch avatars who login into their last location or who bypass the sim landing point. If you want to have a displayed visitors list then add another prim with the display board script in it. If you wish to have helpers notified of first-time visits each day, include the HelpersMessages script and the helpers notecard.
+
+Instructions
+============
+Make a prim which covers the landing point of your region
+Make a notecard called 'Admin' and use the template below to add in the keys (UUID's) of the avatars you wish to be able to see the contents of the counter.
+Make a notecard called 'Ignore' and use the template below to add in the keys (UUID's) of the avatars you wish the counter to ignore.
+Make a notecard called 'Helpers' and use the template below to add in the keys (UUID's) of the avatars you wish to be helpers.
+Add the two notecards you just created to the prim
+Create a new script inside the prim you created
+Copy-paste the script below into the one you just created and save.
+Make a new prim for the display board
+Make a new script and copy the contents from the display board script into the script in the new board
+
+Admin List
+==========
+Any avi on the admin list will be able to click the counter to get a folder with all notecards currently held inside the visitor counter.
+
+Ignore List
+===========
+Any avi on the ignore list will not be counted at all, and will not be recorded. It will be as though they never visited.
+
+Helpers List
+============
+Any avi on the helper's list will be sent an IM notification the first time someone visits the region each day. 
