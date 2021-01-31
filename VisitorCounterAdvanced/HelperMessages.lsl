@@ -118,7 +118,7 @@ MessageHelpers(string aviUUID)
     {
         string pre = "hop://fireandicegrid.net:8002/app/agent/";
         string tail = "/about";
-        string message = pre + aviUUID + tail + " has entered welcome for the first time today"; 
+        string message = pre + aviUUID + tail + " has entered " + llGetRegionName() + " for the first time today"; 
         llInstantMessage(llList2Key(Helpers, index), message);
     }
     
